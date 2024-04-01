@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UserProfile">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/HeadingId"
+        android:padding="10dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+
+        >
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_weight="0.2"
+            android:layout_gravity="center_vertical"
+            android:layout_height="25dp"
+            android:layout_marginEnd="-15dp"
+            android:id="@+id/BackButtonInProfile"
+
+            android:src="@drawable/back_arrow"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight=".35"
+            android:layout_height="wrap_content"
+
+            android:id="@+id/SettingText_InProfile"
+            android:textColor="@color/blue"
+            android:textStyle="bold"
+            android:layout_gravity="center_vertical"
+
+            android:textSize="18sp"
+
+            android:text="@string/settings_SettingFragment"
+            android:layout_alignParentTop="true"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:id="@+id/ProfileText"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:paddingStart="30dp"
+            android:paddingEnd="10dp"
+            android:layout_gravity="center_vertical"
+
+            android:textSize="18sp"
+
+            android:text="@string/profile"
+            android:layout_alignParentTop="true"/>
+
+
+
+
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:id="@+id/profileRL"
+        android:layout_marginTop="30dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/HeadingId">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:id="@+id/ProfileImage"
+
+            app:shapeAppearanceOverlay="@style/circular"
+            android:src="@drawable/logo"
+            android:scaleType="centerCrop"
+
+
+            />
+        <ImageView
+            android:layout_width="40dp"
+            android:id="@+id/ImagePicker"
+
+            android:layout_height="40dp"
+            android:src="@drawable/baseline_camera_alt_24"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"/>
+
+
+    </RelativeLayout>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:background="@color/white"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/profileRL"
+        android:layout_marginTop="40dp"
+        android:text="@string/deepak_agrawal"
+        android:textSize="15dp"
+        android:textColor="@color/black"
+        android:layout_marginStart="20dp"
+        android:id="@+id/ProfileNmae"/>
+
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:id="@+id/SaveButton"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="70dp"
+        android:text="@string/save"
+        android:textSize="15dp"
+        android:backgroundTint="#1AAEE8"/>
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

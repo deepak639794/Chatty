@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:title="@string/status"
+        android:icon="@drawable/status_drawable"
+        android:id="@+id/status"
+        />
+    <item android:title="@string/calls"
+        android:icon="@drawable/call_drawable"
+        android:id="@+id/calls"
+        />
+    <item
+        android:title="@string/camera"
+        android:icon="@drawable/camera_drawable"
+
+        android:id="@+id/Camera"
+        />
+    <item
+        android:title="@string/chats"
+
+        android:icon="@drawable/chats_drawable"
+        android:id="@+id/Chats"
+        />
+    <item
+        android:title="@string/settings"
+        android:icon="@drawable/setting_drawable"
+        android:id="@+id/Settings"/>
+
+
+</menu>

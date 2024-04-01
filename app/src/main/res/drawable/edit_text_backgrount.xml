@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+    <solid android:color="@color/light"/> <!-- Define the width and color of the outline -->
+    <corners android:radius="30dp" /> <!-- Define corner radius if needed -->
+</shape>

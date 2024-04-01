@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".chats.CallUpdate">
+
+   <RelativeLayout
+       android:layout_width="match_parent"
+       android:layout_height="40dp"
+       android:id="@+id/toolbar"
+       android:paddingStart="20dp"
+       android:paddingEnd="20dp"
+       android:paddingBottom="5dp"
+       android:background="#FFF6F6F6"
+       android:orientation="horizontal"
+       app:layout_constraintTop_toTopOf="parent"
+       app:layout_constraintLeft_toLeftOf="parent"
+
+       app:layout_constraintLeft_toRightOf="parent"
+
+       >
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="match_parent"
+          android:text="@string/edit"
+          android:gravity="bottom"
+
+          android:textSize="15sp"
+          android:textColor="@color/blue"
+
+          android:layout_alignParentBottom="true"
+
+          />
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="match_parent"
+          android:layout_centerHorizontal="true"
+          android:gravity="bottom"
+
+          android:textSize="17sp"
+          android:textColor="@color/black"
+          android:textStyle="bold"
+
+          android:text="@string/updatecalls"
+
+          />
+      <ImageView
+          android:layout_width="25dp"
+          android:layout_height="25dp"
+          android:src="@drawable/edit_fill"
+
+          android:layout_alignParentEnd="true"
+          android:layout_alignParentBottom="true"
+          />
+   </RelativeLayout>
+   <androidx.recyclerview.widget.RecyclerView
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:layout_marginTop="40dp"
+       android:id="@+id/RecyclerViewForCalls"
+       app:layout_constraintLeft_toLeftOf="parent"
+       app:layout_constraintRight_toRightOf="parent"
+       app:layout_constraintTop_toBottomOf="@+id/toolbar"
+       app:layout_constraintBottom_toBottomOf="parent"
+       />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
