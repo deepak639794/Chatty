@@ -38,11 +38,11 @@ class VideoCall : AppCompatActivity() {
 
 
     val binding get() = _binding!!
-    var channelname = "WhatsAppVideoCall"
+        var channelname = "WhatsAppVideoCall"
     var appId = "2c59a3b6ec9f495297cae5fe980cb910"
     var isJoined  = false
 
-    var tokenname = "007eJxTYDiy7nRhi1JdyqsDG62u5wrd0rnFPqeu2+mQ4pJna6rqfZ0UGIySTS0TjZPMUpMt00wsTY0szZMTU03TUi0tDJKTLA0NovYzpzUEMjLYrwtgYWSAQBBfkCE8I7Gk2LGgICwzJTXfOTEnh4EBAG3kJOs="
+    var tokenname = "007eJxTYPD5tf2hRvC1js7rUhNvf3siybFxv2OTc2F/Q6FURs2yaHEFBqNkU8tE4ySz1GTLNBNLUyNL8+TEVNO0VEsLg+QkS0MDhUiutIZARoa5M7oZGRkgEMQXZAjPSCwpdiwoCMtMSc13TszJYWAAAEUIJFc="
 //    var tokenname = "007eJxTYLg1+/XqgGvTlnczK/3KE9DNSMq+LVep/i6xU+3A7S01z9UUGIySTS0TjZPMUpMt00wsTY0szZMTU03TUi0tDJKTLA0NVsUzpTUEMjKYn2NnZGSAQBBfkCE8I7Gk2LGgICwzJTXfOTEnh4EBAFAVJH0="
     var agoraEngine : RtcEngine? = null
     var localSurfaceView : SurfaceView ? =null
